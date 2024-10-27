@@ -31,7 +31,7 @@ jobs:
       env:
         REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
         REGISTRY_ALIAS: ecr-alpine
-        REPOSITORY: ecr-alpine-testing
+        REPOSITORY: ecr-vasudev-alpine
         IMAGE_TAG: latest
       run: |
         docker build -t $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG .
