@@ -30,7 +30,6 @@ jobs:
     - name: Build and push Docker image
       env:
         REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
-        REGISTRY_ALIAS: ecr-alpine
         REPOSITORY: ecr-vasudev-alpine
         IMAGE_TAG: latest
       run: |
